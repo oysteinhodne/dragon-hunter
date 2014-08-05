@@ -1,0 +1,277 @@
+html, h1, h2, h3, h4, table, nav, div, a, li, span {
+    font-family: 'Piedra', cursive;
+}
+
+html{
+    /*background: url(../images/fire-dragon-background.jpg);
+    background-size:cover;
+    background-position: center;*/
+}
+
+.btn{
+    border-radius: 2px;
+}
+
+.navbar-inverse .navbar-brand{
+    color:rgb(199, 13, 13);
+}
+
+.navbar-collapse>ul>li:hover{
+    background-color:rgb(20, 20, 20);
+}
+
+.dark-dropdown {
+    background-color: rgb(20, 20, 20);
+}
+
+.dark-dropdown>li>a{
+    color:#999;
+}
+
+.dark-dropdown>li>a:hover{
+    background-color: rgb(199, 13, 13);
+    color:rgb(20, 20, 20);
+}
+
+.tile-image{
+    background-color: lightgray;
+    height: 54px;
+    width:54px;
+    margin:1px;
+    display:inline-block
+}
+
+.game-container{
+    background-image: url(../images/background-black.jpg);
+    background-size: cover;
+    color:rgb(199, 13, 13);
+    min-height:600px;
+}
+
+.sidebar{
+    min-height:600px;
+}
+
+.status-container{
+    background-color: #111;
+    color:#999;
+}
+
+.brand-image {
+    max-height:25px;
+}
+
+.game-menu{
+}
+
+.menu-button{
+    width:300px;
+    height:100px;
+    color:#999;
+    font-size: 32px;
+    margin-top:50px;
+    background: url(../images/menu-button.png);
+    background-size:cover;
+    background-color: rgba(0,0,0,0);
+    border:0;
+}
+
+.menu-button:hover{
+    background: url(../images/menu-button-hover.png);
+    background-color: rgba(0,0,0,0);
+    border:0;
+    color:#C5C50E;
+}
+
+.menu-button:active, .menu-button:focus{
+    background: url(../images/menu-button-active.png);
+    background-size:cover;
+    background-color: rgba(0,0,0,0);
+    border:0;
+    outline:none;
+    color:#C5C50E;
+}
+
+
+
+/*===========================
+    Gear inventory
+============================*/
+
+.gear-section{
+    height:285px;
+    background-image:url(../images/silhouette-red-border.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.gear-slot{
+    background: url(../images/inventory_slot_1.png);
+    background-size: cover;
+    opacity:0.8;
+    height:60px;
+    width:60px;
+    display:inline-block
+}
+
+.gear-slot#headgear{
+    margin-left:82px;
+}
+
+.gear-slot#chest{
+    margin-left:19px;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.gear-slot#gloves{
+}
+
+.gear-slot#weapon{
+}
+
+.gear-slot#off-hand{
+    margin-left:18px;
+}
+
+.gear-slot#legs{
+    margin-left:20px;
+}
+
+.gear-slot#boots{
+    margin-left:83px;
+}
+
+/*===========================
+    Support classes
+============================*/
+.theme-text {
+    color:rgb(199, 13, 13);
+}
+
+.spacer-line{
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+}
+
+.no-margin{
+    margin:0;
+}
+
+.right-border-separator{
+    padding-right:20px;
+    border-right: 1px solid white;
+}
+
+.inline-block{
+    display:inline-block;
+}
+
+.full-width{
+    width:100%;
+}
+
+.w70{
+    width:70%;
+}
+
+.w50{
+    width:50%
+}
+
+.centered-text{
+    text-align:center;
+}
+
+.v-align-m{
+    vertical-align:middle;
+}
+
+.mar-left{
+    margin-left: 20px;
+}
+
+.mar-left-s{
+    margin-left: 10px;
+}
+.mar-left-xs{
+    margin-left: 5px;
+}
+
+.mar-bottom{
+    margin-bottom: 20px;
+}
+
+.mar-bottom-s{
+    margin-bottom: 10px;
+}
+
+.mar-top{
+    margin-top: 20px;
+}
+
+.mar-top-lg{
+    margin-top: 60px;
+}
+
+.mar-right{
+    margin-right: 20px;
+}
+
+.mar-right-s{
+    margin-right: 10px;
+}
+
+.white{
+    color:white;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/*=======================================
+    Media Queries
+========================================*/
+@media screen and (max-width: 767px){
+
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width : 767px)
+and (orientation: landscape){
+
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+
+
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1280px) {
+
+}
