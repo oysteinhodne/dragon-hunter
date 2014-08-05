@@ -67,7 +67,7 @@ html{
 .menu-button{
     width:300px;
     height:100px;
-    color:#999;
+    color:#CCC;
     font-size: 32px;
     margin-top:50px;
     background: url(../images/menu-button.png);
@@ -80,7 +80,6 @@ html{
     background: url(../images/menu-button-hover.png);
     background-color: rgba(0,0,0,0);
     border:0;
-    color:#C5C50E;
 }
 
 .menu-button:active, .menu-button:focus{
@@ -89,7 +88,17 @@ html{
     background-color: rgba(0,0,0,0);
     border:0;
     outline:none;
-    color:#C5C50E;
+}
+
+.text-glow:hover, .text-glow:focus, .text-glow:active {
+   -webkit-stroke-width: 5.3px;
+   -webkit-stroke-color: #FFFFFF;
+   -webkit-fill-color: #FFFFFF;
+   text-shadow: 1px 0px 20px yellow;
+   -webkit-transition: width 0.3s; /*Safari & Chrome*/
+   transition: width 0.3s;
+   -moz-transition: width 0.3s; /* Firefox 4 */
+   -o-transition: width 0.3s; /* Opera */
 }
 
 
@@ -99,8 +108,7 @@ html{
 ============================*/
 
 .gear-section{
-    height:285px;
-    background-image:url(../images/silhouette-red-border.png);
+    /*background-image:url(../images/silhouette-red-border.png);*/
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -109,37 +117,15 @@ html{
     background: url(../images/inventory_slot_1.png);
     background-size: cover;
     opacity:0.8;
-    height:60px;
-    width:60px;
+    height:64px;
+    width:64px;
     display:inline-block
 }
 
-.gear-slot#headgear{
-    margin-left:82px;
-}
-
-.gear-slot#chest{
-    margin-left:19px;
-    margin-top:15px;
-    margin-bottom:15px;
-}
-
-.gear-slot#gloves{
-}
-
-.gear-slot#weapon{
-}
-
-.gear-slot#off-hand{
-    margin-left:18px;
-}
-
-.gear-slot#legs{
-    margin-left:20px;
-}
-
-.gear-slot#boots{
-    margin-left:83px;
+.gear-slot:hover{
+    -moz-box-shadow:    0px 0px 5px 2px #666;
+    -webkit-box-shadow: 0px 0px 5px 2px #666;
+    box-shadow:         0px 0px 5px 2px #666;
 }
 
 /*===========================

@@ -1,46 +1,11 @@
 angular.module('Gear', [])
-    .factory('GearModel', function(GenerateUniqueId){
-        var Gear = function (power, slot, ){
-            this.x = pos.x;
-            this.y = pos.y;
-            this.value = val || 2;
+    .factory('GearModel', function(){
+        var Gear = function (power, gearType){
+            this.power = power;
+            this.gearType = gearType;
 
-            this.id = GenerateUniqueId.next();
-            this.merged = null;
+            this.id = 1; //GenerateUniqueId.next();
         };
 
-        Tile.prototype.savePosition = function() {
-            this.originalX = this.x;
-            this.originalY = this.y;
-        };
-
-        Tile.prototype.reset = function() {
-            this.merged = null;
-        };
-
-        Tile.prototype.setMergedBy = function(arr) {
-            var self = this;
-            arr.forEach(function(tile) {
-              tile.merged = true;
-              tile.updatePosition(self.getPosition());
-            });
-        };
-
-        Tile.prototype.updateValue = function(newVal) {
-            this.value = newVal;
-        };
-
-        Tile.prototype.updatePosition = function(newPosition) {
-            this.x = newPosition.x;
-            this.y = newPosition.y;
-        };
-
-        Tile.prototype.getPosition = function() {
-            return {
-              x: this.x,
-              y: this.y
-            };
-        };
-
-        return Tile;
+        return Gear;
     })
