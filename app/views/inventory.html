@@ -1,0 +1,8 @@
+<div class="status-container text-center">
+    <h4 class="container-header">Inventory</h4>
+    <div class="gear-section">
+        <div class="gear-slot" ng-repeat="inventorySlot in inventorySlots">
+            <img class="gear-icon" ng-class="{true:'equipped'}[inventorySlot.item.equipped]" ng-show="inventorySlot.item.iconUrl" ng-src="{{inventorySlot.item.iconUrl}}"/>
+        </div>
+    </div>
+</div>
